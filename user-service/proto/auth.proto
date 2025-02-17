@@ -1,0 +1,87 @@
+syntax = "proto3";
+
+package grpc.auht;
+option go_package = "/proto/auth";
+
+
+service AuthService {
+    rpc Login (LoginRequest) returns (LoginResponse);
+    rpc Register (RegisterRequest) returns (RegisterResponse);
+    rpc Profile (ProfileRequest) returns (ProfileResponse);
+    rpc VerifyToken(VerifyTokenRequest) returns (VerifyTokenResponse);
+    rpc SaveProfile (SaveProfileRequest) returns (SaveProfileResponse);
+}
+
+message LoginRequest {
+    string email = 1;
+    string password = 2;
+}
+
+message LoginResponse {
+    UserToken userToken = 3;
+}
+
+message RegisterRequest {
+    string email = 1;
+    string password = 2;
+}
+
+message RegisterResponse {
+    int32 status = 1;
+    string message = 2;
+}
+
+message LogoutRequest {
+    string userId = 1;
+}
+
+
+message ProfileRequest {
+}
+
+message ProfileResponse {
+    int32 status = 1;
+    string message = 2;
+    map<string, User> data = 3; // Используем map для более плоской структуры
+}
+
+message VerifyTokenRequest {
+}
+
+message VerifyTokenResponse {
+    int32 status = 1;
+    string message = 2;
+}
+
+message SaveProfileRequest {
+    string email = 1;
+    string firstName = 2;
+    string lastName = 3;
+    string avatar = 4;
+}
+
+message SaveProfileResponse {
+    int32 status = 1;
+    string message = 2;
+    map<string, User> data = 3; // Используем map для более плоской структуры
+}
+
+
+
+
+message UserToken {
+    string userId = 1;
+    string token = 2;
+}
+
+message User {
+    string id = 1;
+    string email = 2;
+    string firstName = 3;
+    string lastName = 4;
+    bool isActive = 5;
+    bool isVerified = 6;
+    string avatar = 7;
+    string createdAt = 8;
+    string updatedAt = 9;
+}
