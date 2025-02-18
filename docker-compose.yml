@@ -10,12 +10,30 @@ services:
       - "--entrypoints.web.address=:80"
     ports:
       - "80:80"
-      - "8080:8080"  # Админка Traefik (можно убрать)
+     # - "8080:8080"  # Админка Traefik (можно убрать)
     networks:
       - app-net
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
 
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    volumes:
+      - .:/app
+      - /app/node_modules  # Prevents overwriting node_modules
+    restart: always
+    ports:
+       - "8080:8080"
+    networks:
+      - app-net
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.frontend.rule=PathPrefix(`/`)"
+      - "traefik.http.routers.frontend.entrypoints=web"
+      - "traefik.http.services.frontend.loadbalancer.server.port=5173"
   # frontend:
   #   build:
   #     context: ./frontend
@@ -96,7 +114,7 @@ services:
       - ./core-service/docker/logs/nginx:/var/log/nginx
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.core.rule=PathPrefix(`/`)"
+      - "traefik.http.routers.core.rule=PathPrefix(`/core-service`)"
      # - "traefik.http.middlewares.core-strip.stripprefix.prefixes=/core"
      # - "traefik.http.routers.core.middlewares=core-strip"
       - "traefik.http.services.core.loadbalancer.server.port=80"

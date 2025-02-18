@@ -1,12 +1,17 @@
-# Используем Node.js для сборки
-FROM node:20 AS builder
+FROM node:lts-alpine
+# install simple http server for serving static content
+RUN npm install -g http-server
+# make the 'app' folder the current working directory
 WORKDIR /app
-COPY package*.json ./
-RUN npm install
-COPY . .
-# RUN npm run build
 
-# Используем Nginx для раздачи собранного проекта
-FROM nginx:alpine
-COPY --from=builder /app/dist /usr/share/nginx/html
-EXPOSE 80
+# copy 'package.json' to install dependencies
+COPY package*.json ./
+# install dependencies
+
+RUN npm install
+# copy files and folders to the current working directory (i.e. 'app' folder)
+COPY . .
+# build app for production with minification
+RUN npm run build
+EXPOSE 8080
+CMD [ "http-server", "dist" ]

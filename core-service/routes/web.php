@@ -28,7 +28,6 @@ Route::middleware([
     })->name('projects');
 });
 
-
 Route::get('test', function () {
     return Inertia::render('Test');
 });

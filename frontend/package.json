@@ -1,26 +1,20 @@
 {
-  "name": "frontend",
+  "name": "vue-project",
   "version": "0.0.0",
   "private": true,
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview",
-    "test:e2e": "start-server-and-test preview http://localhost:4173 'cypress run --e2e'",
-    "test:e2e:dev": "start-server-and-test 'vite dev --port 4173' http://localhost:4173 'cypress open --e2e'",
-    "test:unit": "cypress run --component",
-    "test:unit:dev": "cypress open --component"
+    "preview": "vite preview"
   },
   "dependencies": {
-    "@improbable-eng/grpc-web": "^0.15.0",
+    "pinia": "^3.0.1",
     "vue": "^3.5.13"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.2.1",
-    "cypress": "^14.0.0",
-    "start-server-and-test": "^2.0.10",
-    "vite": "^6.0.11",
-    "vite-plugin-vue-devtools": "^7.7.0"
+    "vite": "^6.1.0",
+    "vite-plugin-vue-devtools": "^7.7.2"
   }
 }
