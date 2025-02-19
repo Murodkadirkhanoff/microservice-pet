@@ -9,5 +9,5 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/user', function (Request $request) {
-    return "asd";
+    return "asd updated sad";
 });

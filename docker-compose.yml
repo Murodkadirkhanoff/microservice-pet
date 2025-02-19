@@ -10,7 +10,7 @@ services:
       - "--entrypoints.web.address=:80"
     ports:
       - "80:80"
-     # - "8080:8080"  # Админка Traefik (можно убрать)
+      - "8080:8080"  # Админка Traefik (можно убрать)
     networks:
       - app-net
     volumes:
@@ -22,11 +22,11 @@ services:
       context: ./frontend
       dockerfile: Dockerfile
     volumes:
-      - .:/app
+      - ./frontend:/app
       - /app/node_modules  # Prevents overwriting node_modules
     restart: always
     ports:
-       - "8080:8080"
+       - "5173:5173"
     networks:
       - app-net
     labels:
@@ -34,33 +34,26 @@ services:
       - "traefik.http.routers.frontend.rule=PathPrefix(`/`)"
       - "traefik.http.routers.frontend.entrypoints=web"
       - "traefik.http.services.frontend.loadbalancer.server.port=5173"
-  # frontend:
-  #   build:
-  #     context: ./frontend
-  #     dockerfile: Dockerfile
-  #   container_name: frontend
-  #   restart: always
-  #   labels:
-  #     - "traefik.enable=true"
-  #     - "traefik.http.routers.vue.rule=PathPrefix(`/`)"
-  #     - "traefik.http.routers.vue.entrypoints=web"
-  #   networks:
-  #     - app-net
-  # notification-service:
-  #   build:
-  #     context: ./notification-service
-  #     dockerfile: Dockerfile
-  #   container_name: notification-service
-  #   ports:  
-  #     - "8081:8081"
-  #   labels:
-  #     - "traefik.enable=true"
-  #     - "traefik.http.routers.notification.rule=PathPrefix(`/notification-service`)"
-  #     - "traefik.http.middlewares.notification-strip.stripprefix.prefixes=/notification-service"
-  #     - "traefik.http.routers.notification.middlewares=notification-strip"
-  #     - "traefik.http.services.notification.loadbalancer.server.port=8081"
-  #   networks:
-  #     - app-net
+
+  design-service:
+    build:
+      context: ./design-service
+      dockerfile: Dockerfile
+    container_name: design-service
+    volumes:
+      - ./design-service:/app
+    ports:  
+      - "8070:8070"
+    stdin_open: true  # Чтобы работал интерактивный ввод
+    tty: true         # Для работы в терминале
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.design.rule=PathPrefix(`/design-service`)"
+      - "traefik.http.middlewares.design-strip.stripprefix.prefixes=/design-service"
+      - "traefik.http.routers.design.middlewares=design-strip"
+      - "traefik.http.services.design.loadbalancer.server.port=8070"
+    networks:
+      - app-net
 
   # user-service:
   #     build:
@@ -115,8 +108,8 @@ services:
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.core.rule=PathPrefix(`/core-service`)"
-     # - "traefik.http.middlewares.core-strip.stripprefix.prefixes=/core"
-     # - "traefik.http.routers.core.middlewares=core-strip"
+      - "traefik.http.middlewares.core-strip.stripprefix.prefixes=/core-service"
+      - "traefik.http.routers.core.middlewares=core-strip"
       - "traefik.http.services.core.loadbalancer.server.port=80"
     depends_on:
       - core-service
