@@ -256,6 +256,17 @@
       <path value="$PROJECT_DIR$/analytic-review-service/vendor/league/uri-interfaces" />
       <path value="$PROJECT_DIR$/analytic-review-service/vendor/nesbot/carbon" />
       <path value="$PROJECT_DIR$/analytic-review-service/vendor/dasprid/enum" />
+      <path value="$PROJECT_DIR$/core-service/vendor/lcobucci/jwt" />
+      <path value="$PROJECT_DIR$/core-service/vendor/lcobucci/clock" />
+      <path value="$PROJECT_DIR$/core-service/vendor/league/oauth2-server" />
+      <path value="$PROJECT_DIR$/core-service/vendor/league/event" />
+      <path value="$PROJECT_DIR$/core-service/vendor/symfony/psr-http-message-bridge" />
+      <path value="$PROJECT_DIR$/core-service/vendor/defuse/php-encryption" />
+      <path value="$PROJECT_DIR$/core-service/vendor/laravel/passport" />
+      <path value="$PROJECT_DIR$/core-service/vendor/nyholm/psr7" />
+      <path value="$PROJECT_DIR$/core-service/vendor/phpseclib/phpseclib" />
+      <path value="$PROJECT_DIR$/core-service/vendor/firebase/php-jwt" />
+      <path value="$PROJECT_DIR$/core-service/vendor/paragonie/random_compat" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.2" />
@@ -265,7 +276,6 @@
   <component name="PhpUnit">
     <phpunit_settings>
       <PhpUnitSettings configuration_file_path="$PROJECT_DIR$/analytic-review-service/phpunit.xml" custom_loader_path="$PROJECT_DIR$/analytic-review-service/vendor/autoload.php" use_configuration_file="true" />
-      <PhpUnitSettings configuration_file_path="$PROJECT_DIR$/core-service/phpunit.xml" custom_loader_path="$PROJECT_DIR$/core-service/vendor/autoload.php" use_configuration_file="true" />
     </phpunit_settings>
   </component>
   <component name="PsalmOptionsConfiguration">

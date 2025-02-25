@@ -50,7 +50,6 @@ COPY . .
 
 # RUN composer install --no-dev --optimize-autoloader
 
-RUN npm run build
 # Устанавливаем владельца файлов (php-fpm работает от www-data)
 RUN chown -R www-data:www-data /var/www
 RUN chmod -R 775 /var/www/storage /var/www/bootstrap/cache

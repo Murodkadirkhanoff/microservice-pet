@@ -258,6 +258,17 @@
       <excludeFolder url="file://$MODULE_DIR$/core-service/vendor/vlucas/phpdotenv" />
       <excludeFolder url="file://$MODULE_DIR$/core-service/vendor/voku/portable-ascii" />
       <excludeFolder url="file://$MODULE_DIR$/core-service/vendor/webmozart/assert" />
+      <excludeFolder url="file://$MODULE_DIR$/core-service/vendor/defuse/php-encryption" />
+      <excludeFolder url="file://$MODULE_DIR$/core-service/vendor/firebase/php-jwt" />
+      <excludeFolder url="file://$MODULE_DIR$/core-service/vendor/laravel/passport" />
+      <excludeFolder url="file://$MODULE_DIR$/core-service/vendor/lcobucci/clock" />
+      <excludeFolder url="file://$MODULE_DIR$/core-service/vendor/lcobucci/jwt" />
+      <excludeFolder url="file://$MODULE_DIR$/core-service/vendor/league/event" />
+      <excludeFolder url="file://$MODULE_DIR$/core-service/vendor/league/oauth2-server" />
+      <excludeFolder url="file://$MODULE_DIR$/core-service/vendor/nyholm/psr7" />
+      <excludeFolder url="file://$MODULE_DIR$/core-service/vendor/paragonie/random_compat" />
+      <excludeFolder url="file://$MODULE_DIR$/core-service/vendor/phpseclib/phpseclib" />
+      <excludeFolder url="file://$MODULE_DIR$/core-service/vendor/symfony/psr-http-message-bridge" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

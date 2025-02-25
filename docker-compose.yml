@@ -8,6 +8,13 @@ services:
       - "--providers.docker=true"
       - "--providers.docker.exposedbydefault=false"
       - "--entrypoints.web.address=:80"
+
+      # Логи
+      - "--accesslog=true"
+      - "--accesslog.filepath=/logs/access.log"
+      - "--log.level=INFO"
+      - "--log.filePath=/logs/traefik.log"
+
     ports:
       - "80:80"
       - "8080:8080"  # Админка Traefik (можно убрать)
@@ -15,37 +22,15 @@ services:
       - app-net
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-
-
-  frontend:
-    build:
-      context: ./frontend
-      dockerfile: Dockerfile
-    volumes:
-      - ./frontend:/app
-      - /app/node_modules  # Prevents overwriting node_modules
-    restart: always
-    ports:
-       - "5173:5173"
-    networks:
-      - app-net
-    labels:
-      - "traefik.enable=true"
-      - "traefik.http.routers.frontend.rule=PathPrefix(`/`)"
-      - "traefik.http.routers.frontend.entrypoints=web"
-      - "traefik.http.services.frontend.loadbalancer.server.port=5173"
+      - ./traefik/logs:/logs
 
   design-service:
     build:
       context: ./design-service
       dockerfile: Dockerfile
     container_name: design-service
-    volumes:
-      - ./design-service:/app
-    ports:  
+    ports:
       - "8070:8070"
-    stdin_open: true  # Чтобы работал интерактивный ввод
-    tty: true         # Для работы в терминале
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.design.rule=PathPrefix(`/design-service`)"
@@ -75,15 +60,15 @@ services:
   #     ports:
   #       - "50051:50051"
 
-  postgres_user_service:
+  design-service-db:
     image: postgres:latest
     environment:
       POSTGRES_PASSWORD: secret
-      POSTGRES_DB: user_service
-    # ports:
-    #   - "5432:5432"
+      POSTGRES_DB: design_service
+    ports:
+      - "5432:5432"
     volumes:
-      - user_service_data:/var/lib/postgresql/data
+      - design_service_data:/var/lib/postgresql/data
     networks:
       - app-net
   
@@ -116,9 +101,26 @@ services:
     networks:
       - app-net
 
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules  # Prevents overwriting node_modules
+    restart: always
+    ports:
+      - "5173:5173"
+    networks:
+      - app-net
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.frontend.rule=PathPrefix(`/`)"
+      - "traefik.http.routers.frontend.entrypoints=web"
+      - "traefik.http.services.frontend.loadbalancer.server.port=5173"
 networks:
   app-net:
     driver: bridge
 
 volumes:
-  user_service_data:
+  design_service_data:

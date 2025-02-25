@@ -1,28 +1,16 @@
-# Используем официальный образ Go
-FROM golang:latest as build
+FROM golang:alpine AS builder
 
-# Устанавливаем рабочую директорию
 WORKDIR /app
 
-# Копируем файлы проекта
 COPY . .
 
-# Скачиваем зависимости
-RUN go mod tidy
+RUN go mod download
 
-# Собираем приложение
-RUN go build -o myapp .
+RUN go build -o app
 
-# Финальный контейнер
-FROM golang:latest
+FROM alpine
 
-WORKDIR /app
+WORKDIR /
 
-# Копируем скомпилированное приложение
-COPY --from=build /app/myapp .
-
-# Открываем порт
-EXPOSE 8070
-
-# Запускаем приложение
-CMD ["/app/myapp"]
+COPY --from=builder /app/app /app
+ENTRYPOINT ["/app"]

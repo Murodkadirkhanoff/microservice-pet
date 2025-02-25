@@ -1,0 +1,84 @@
+time="2025-02-24T04:52:34Z" level=info msg="Traefik version 2.10.7 built on 2023-12-06T15:54:59Z"
+time="2025-02-24T04:52:34Z" level=info msg="\nStats collection is disabled.\nHelp us improve Traefik by turning this feature on :)\nMore details on: https://doc.traefik.io/traefik/contributing/data-collection/\n"
+time="2025-02-24T04:52:34Z" level=info msg="Starting provider aggregator aggregator.ProviderAggregator"
+time="2025-02-24T04:52:34Z" level=info msg="Starting provider *traefik.Provider"
+time="2025-02-24T04:52:34Z" level=info msg="Starting provider *docker.Provider"
+time="2025-02-24T04:52:34Z" level=info msg="Starting provider *acme.ChallengeTLSALPN"
+time="2025-02-24T04:52:46Z" level=info msg="I have to go..."
+time="2025-02-24T04:52:46Z" level=info msg="Stopping server gracefully"
+time="2025-02-24T04:52:46Z" level=error msg="accept tcp [::]:8080: use of closed network connection" entryPointName=traefik
+time="2025-02-24T04:52:46Z" level=error msg="accept tcp [::]:80: use of closed network connection" entryPointName=web
+time="2025-02-24T04:52:46Z" level=error msg="close tcp [::]:80: use of closed network connection" entryPointName=web
+time="2025-02-24T04:52:46Z" level=error msg="close tcp [::]:8080: use of closed network connection" entryPointName=traefik
+time="2025-02-24T04:52:46Z" level=info msg="Server stopped"
+time="2025-02-24T04:52:46Z" level=info msg="Shutting down"
+time="2025-02-24T04:52:46Z" level=error msg="Failed to list containers for docker, error context canceled" providerName=docker
+time="2025-02-24T04:52:46Z" level=error msg="Cannot connect to docker server context canceled" providerName=docker
+time="2025-02-24T10:24:38Z" level=info msg="Traefik version 2.10.7 built on 2023-12-06T15:54:59Z"
+time="2025-02-24T10:24:38Z" level=info msg="\nStats collection is disabled.\nHelp us improve Traefik by turning this feature on :)\nMore details on: https://doc.traefik.io/traefik/contributing/data-collection/\n"
+time="2025-02-24T10:24:38Z" level=info msg="Starting provider aggregator aggregator.ProviderAggregator"
+time="2025-02-24T10:24:38Z" level=info msg="Starting provider *traefik.Provider"
+time="2025-02-24T10:24:38Z" level=info msg="Starting provider *docker.Provider"
+time="2025-02-24T10:24:38Z" level=info msg="Starting provider *acme.ChallengeTLSALPN"
+time="2025-02-24T10:34:39Z" level=warning msg="A new release has been found: 3.3.3. Please consider updating."
+time="2025-02-24T10:37:48Z" level=warning msg="Failed to inspect container e4ca37c1c37b3629f3f9f511547722749fa0f68156c1d85e4c3c64da1ae7d134, error: Error: No such container: e4ca37c1c37b3629f3f9f511547722749fa0f68156c1d85e4c3c64da1ae7d134" providerName=docker
+time="2025-02-24T10:55:07Z" level=warning msg="Failed to inspect container 8887526dc34374c01fc10b1c7ea6ed3460e713916b4420fa121cf43ae4c876bf, error: Error: No such container: 8887526dc34374c01fc10b1c7ea6ed3460e713916b4420fa121cf43ae4c876bf" providerName=docker
+time="2025-02-24T10:57:25Z" level=warning msg="Failed to inspect container 1c9908e03335f94b0858c193e327e3473bdb4f927b0273e953e6f06c4fd5ef9e, error: Error: No such container: 1c9908e03335f94b0858c193e327e3473bdb4f927b0273e953e6f06c4fd5ef9e" providerName=docker
+time="2025-02-24T11:03:15Z" level=warning msg="Failed to inspect container 36d80ae00cdbdeea6fd9bb03ab100fc246ff67e7e1ba1fd339b028d6a2816406, error: Error: No such container: 36d80ae00cdbdeea6fd9bb03ab100fc246ff67e7e1ba1fd339b028d6a2816406" providerName=docker
+time="2025-02-24T11:04:59Z" level=warning msg="Failed to inspect container e3a92f32a279dac5a9ef017dbdb91f6b5ec544af02f33d6f628872ca2d59223c, error: Error: No such container: e3a92f32a279dac5a9ef017dbdb91f6b5ec544af02f33d6f628872ca2d59223c" providerName=docker
+time="2025-02-24T11:39:10Z" level=info msg="I have to go..."
+time="2025-02-24T11:39:10Z" level=info msg="Stopping server gracefully"
+time="2025-02-24T11:39:10Z" level=error msg="accept tcp [::]:80: use of closed network connection" entryPointName=web
+time="2025-02-24T11:39:10Z" level=error msg="accept tcp [::]:8080: use of closed network connection" entryPointName=traefik
+time="2025-02-24T11:39:10Z" level=error msg="close tcp [::]:8080: use of closed network connection" entryPointName=traefik
+time="2025-02-24T11:39:10Z" level=error msg="close tcp [::]:80: use of closed network connection" entryPointName=web
+time="2025-02-24T11:39:10Z" level=info msg="Server stopped"
+time="2025-02-24T11:39:10Z" level=info msg="Shutting down"
+time="2025-02-25T04:57:59Z" level=info msg="Traefik version 2.10.7 built on 2023-12-06T15:54:59Z"
+time="2025-02-25T04:57:59Z" level=info msg="\nStats collection is disabled.\nHelp us improve Traefik by turning this feature on :)\nMore details on: https://doc.traefik.io/traefik/contributing/data-collection/\n"
+time="2025-02-25T04:57:59Z" level=info msg="Starting provider aggregator aggregator.ProviderAggregator"
+time="2025-02-25T04:57:59Z" level=info msg="Starting provider *traefik.Provider"
+time="2025-02-25T04:57:59Z" level=info msg="Starting provider *docker.Provider"
+time="2025-02-25T04:57:59Z" level=info msg="Starting provider *acme.ChallengeTLSALPN"
+time="2025-02-25T05:08:01Z" level=warning msg="A new release has been found: 2.11.21. Please consider updating."
+time="2025-02-25T06:01:53Z" level=info msg="Traefik version 2.10.7 built on 2023-12-06T15:54:59Z"
+time="2025-02-25T06:01:53Z" level=info msg="\nStats collection is disabled.\nHelp us improve Traefik by turning this feature on :)\nMore details on: https://doc.traefik.io/traefik/contributing/data-collection/\n"
+time="2025-02-25T06:01:53Z" level=info msg="Starting provider aggregator aggregator.ProviderAggregator"
+time="2025-02-25T06:01:53Z" level=info msg="Starting provider *traefik.Provider"
+time="2025-02-25T06:01:53Z" level=info msg="Starting provider *docker.Provider"
+time="2025-02-25T06:01:53Z" level=info msg="Starting provider *acme.ChallengeTLSALPN"
+time="2025-02-25T06:05:18Z" level=info msg="I have to go..."
+time="2025-02-25T06:05:18Z" level=info msg="Stopping server gracefully"
+time="2025-02-25T06:05:18Z" level=error msg="accept tcp [::]:8080: use of closed network connection" entryPointName=traefik
+time="2025-02-25T06:05:18Z" level=error msg="close tcp [::]:8080: use of closed network connection" entryPointName=traefik
+time="2025-02-25T06:05:18Z" level=error msg="accept tcp [::]:80: use of closed network connection" entryPointName=web
+time="2025-02-25T06:05:18Z" level=error msg="close tcp [::]:80: use of closed network connection" entryPointName=web
+time="2025-02-25T06:05:18Z" level=info msg="Server stopped"
+time="2025-02-25T06:05:18Z" level=info msg="Shutting down"
+time="2025-02-25T06:06:37Z" level=info msg="Traefik version 2.10.7 built on 2023-12-06T15:54:59Z"
+time="2025-02-25T06:06:37Z" level=info msg="\nStats collection is disabled.\nHelp us improve Traefik by turning this feature on :)\nMore details on: https://doc.traefik.io/traefik/contributing/data-collection/\n"
+time="2025-02-25T06:06:37Z" level=info msg="Starting provider aggregator aggregator.ProviderAggregator"
+time="2025-02-25T06:06:37Z" level=info msg="Starting provider *traefik.Provider"
+time="2025-02-25T06:06:37Z" level=info msg="Starting provider *docker.Provider"
+time="2025-02-25T06:06:37Z" level=info msg="Starting provider *acme.ChallengeTLSALPN"
+time="2025-02-25T06:16:39Z" level=warning msg="A new release has been found: 2.11.21. Please consider updating."
+time="2025-02-25T06:27:49Z" level=warning msg="Failed to inspect container 54930c306b7687e616bfb8b972062c19c194dee40c15921fe034582a19b677e0, error: Error: No such container: 54930c306b7687e616bfb8b972062c19c194dee40c15921fe034582a19b677e0" providerName=docker
+time="2025-02-25T06:44:34Z" level=info msg="I have to go..."
+time="2025-02-25T06:44:34Z" level=info msg="Stopping server gracefully"
+time="2025-02-25T06:44:34Z" level=error msg="accept tcp [::]:80: use of closed network connection" entryPointName=web
+time="2025-02-25T06:44:34Z" level=error msg="accept tcp [::]:8080: use of closed network connection" entryPointName=traefik
+time="2025-02-25T06:44:34Z" level=error msg="close tcp [::]:8080: use of closed network connection" entryPointName=traefik
+time="2025-02-25T06:44:34Z" level=error msg="close tcp [::]:80: use of closed network connection" entryPointName=web
+time="2025-02-25T06:44:34Z" level=info msg="Server stopped"
+time="2025-02-25T06:44:34Z" level=info msg="Shutting down"
+time="2025-02-25T06:45:58Z" level=info msg="Traefik version 2.10.7 built on 2023-12-06T15:54:59Z"
+time="2025-02-25T06:45:58Z" level=info msg="\nStats collection is disabled.\nHelp us improve Traefik by turning this feature on :)\nMore details on: https://doc.traefik.io/traefik/contributing/data-collection/\n"
+time="2025-02-25T06:45:58Z" level=info msg="Starting provider aggregator aggregator.ProviderAggregator"
+time="2025-02-25T06:45:58Z" level=info msg="Starting provider *traefik.Provider"
+time="2025-02-25T06:45:58Z" level=info msg="Starting provider *docker.Provider"
+time="2025-02-25T06:45:58Z" level=info msg="Starting provider *acme.ChallengeTLSALPN"
+time="2025-02-25T06:55:59Z" level=warning msg="Error checking new version: GET https://api.github.com/repos/traefik/traefik/releases: 403 API rate limit exceeded for 195.158.8.218. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.) [rate reset in 2m11s]"
+time="2025-02-25T06:58:49Z" level=warning msg="Failed to inspect container 0bd937d9b326fe8b98643e47b54f4da45692019522a023eef403d0d610300705, error: Error: No such container: 0bd937d9b326fe8b98643e47b54f4da45692019522a023eef403d0d610300705" providerName=docker
+time="2025-02-25T09:14:47Z" level=warning msg="Failed to inspect container deb49575d013681ad7422cb30b7855147fa985510cd5f918d35466909a995573, error: Error: No such container: deb49575d013681ad7422cb30b7855147fa985510cd5f918d35466909a995573" providerName=docker
+time="2025-02-25T09:17:02Z" level=warning msg="Failed to inspect container 4c31b5980c106027e9908db0f0ae5df2bb3b22433aafebdcf17bbb076a995381, error: Error: No such container: 4c31b5980c106027e9908db0f0ae5df2bb3b22433aafebdcf17bbb076a995381" providerName=docker
+time="2025-02-25T09:18:03Z" level=warning msg="Failed to inspect container b8ad8a7db0054af61d8e4c65b3f884a71e089763e7cfd40d5073bd2ec94fb306, error: Error: No such container: b8ad8a7db0054af61d8e4c65b3f884a71e089763e7cfd40d5073bd2ec94fb306" providerName=docker

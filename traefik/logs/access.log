@@ -1,0 +1,1 @@
+172.19.0.1 - - [24/Feb/2025:10:31:19 +0000] "POST /core-service/api/login HTTP/1.1" 200 992 "-" "-" 1 "core@docker" "http://172.19.0.7:80" 25882ms
