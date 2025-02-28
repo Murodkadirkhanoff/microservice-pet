@@ -7,5 +7,6 @@ import (
 func RegisterRoutes(server *gin.Engine) {
 
 	server.GET("/projects", getProjects)
+	server.POST("/projects", CreateProject)
 
 }

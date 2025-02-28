@@ -86,3 +86,106 @@ time="2025-02-25T10:08:34Z" level=warning msg="Failed to inspect container 8eef2
 time="2025-02-25T10:11:54Z" level=warning msg="Failed to inspect container d7eddeb4f0e7402c271c602856c9ec004a7df7e125ffe29b740156c6f0bff7c3, error: Error: No such container: d7eddeb4f0e7402c271c602856c9ec004a7df7e125ffe29b740156c6f0bff7c3" providerName=docker
 time="2025-02-25T10:16:07Z" level=warning msg="Failed to inspect container 0c0eff9bd3ffd193893e6c49af48a2614ea863578eec8ec4daca1ff25da8af48, error: Error: No such container: 0c0eff9bd3ffd193893e6c49af48a2614ea863578eec8ec4daca1ff25da8af48" providerName=docker
 time="2025-02-25T10:18:30Z" level=warning msg="Failed to inspect container 1695fc453be0685e72533c66c501534632f78e0c709509a066beba060846a51d, error: Error: No such container: 1695fc453be0685e72533c66c501534632f78e0c709509a066beba060846a51d" providerName=docker
+time="2025-02-25T10:30:34Z" level=info msg="I have to go..."
+time="2025-02-25T10:30:34Z" level=info msg="Stopping server gracefully"
+time="2025-02-25T10:30:34Z" level=error msg="accept tcp [::]:8080: use of closed network connection" entryPointName=traefik
+time="2025-02-25T10:30:34Z" level=error msg="accept tcp [::]:80: use of closed network connection" entryPointName=web
+time="2025-02-25T10:30:34Z" level=error msg="close tcp [::]:8080: use of closed network connection" entryPointName=traefik
+time="2025-02-25T10:30:34Z" level=error msg="close tcp [::]:80: use of closed network connection" entryPointName=web
+time="2025-02-25T10:30:34Z" level=info msg="Server stopped"
+time="2025-02-25T10:30:34Z" level=info msg="Shutting down"
+time="2025-02-27T04:22:51Z" level=info msg="Traefik version 2.10.7 built on 2023-12-06T15:54:59Z"
+time="2025-02-27T04:22:51Z" level=info msg="\nStats collection is disabled.\nHelp us improve Traefik by turning this feature on :)\nMore details on: https://doc.traefik.io/traefik/contributing/data-collection/\n"
+time="2025-02-27T04:22:51Z" level=info msg="Starting provider aggregator aggregator.ProviderAggregator"
+time="2025-02-27T04:22:51Z" level=info msg="Starting provider *traefik.Provider"
+time="2025-02-27T04:22:51Z" level=info msg="Starting provider *docker.Provider"
+time="2025-02-27T04:22:51Z" level=info msg="Starting provider *acme.ChallengeTLSALPN"
+time="2025-02-27T04:22:59Z" level=error msg="service \"core\" error: unable to find the IP address for the container \"/nginx-core\": the server is ignored" providerName=docker container=nginx-core-pet-micr-64c53b3ceda5ff57953523e73f976c074aa9149f2916ec24bf10d86662122877
+time="2025-02-27T04:23:13Z" level=error msg="service \"core\" error: unable to find the IP address for the container \"/nginx-core\": the server is ignored" container=nginx-core-pet-micr-64c53b3ceda5ff57953523e73f976c074aa9149f2916ec24bf10d86662122877 providerName=docker
+time="2025-02-27T04:23:19Z" level=error msg="service \"core\" error: unable to find the IP address for the container \"/nginx-core\": the server is ignored" providerName=docker container=nginx-core-pet-micr-64c53b3ceda5ff57953523e73f976c074aa9149f2916ec24bf10d86662122877
+time="2025-02-27T04:23:28Z" level=error msg="service \"core\" error: unable to find the IP address for the container \"/nginx-core\": the server is ignored" container=nginx-core-pet-micr-64c53b3ceda5ff57953523e73f976c074aa9149f2916ec24bf10d86662122877 providerName=docker
+time="2025-02-27T04:23:31Z" level=error msg="service \"core\" error: unable to find the IP address for the container \"/nginx-core\": the server is ignored" providerName=docker container=nginx-core-pet-micr-64c53b3ceda5ff57953523e73f976c074aa9149f2916ec24bf10d86662122877
+time="2025-02-27T04:23:39Z" level=error msg="service \"core\" error: unable to find the IP address for the container \"/nginx-core\": the server is ignored" providerName=docker container=nginx-core-pet-micr-64c53b3ceda5ff57953523e73f976c074aa9149f2916ec24bf10d86662122877
+time="2025-02-27T04:23:56Z" level=error msg="service \"core\" error: unable to find the IP address for the container \"/nginx-core\": the server is ignored" providerName=docker container=nginx-core-pet-micr-64c53b3ceda5ff57953523e73f976c074aa9149f2916ec24bf10d86662122877
+time="2025-02-27T04:24:26Z" level=error msg="service \"core\" error: unable to find the IP address for the container \"/nginx-core\": the server is ignored" providerName=docker container=nginx-core-pet-micr-64c53b3ceda5ff57953523e73f976c074aa9149f2916ec24bf10d86662122877
+time="2025-02-27T04:25:21Z" level=error msg="service \"core\" error: unable to find the IP address for the container \"/nginx-core\": the server is ignored" providerName=docker container=nginx-core-pet-micr-64c53b3ceda5ff57953523e73f976c074aa9149f2916ec24bf10d86662122877
+time="2025-02-27T04:26:25Z" level=error msg="service \"core\" error: unable to find the IP address for the container \"/nginx-core\": the server is ignored" container=nginx-core-pet-micr-64c53b3ceda5ff57953523e73f976c074aa9149f2916ec24bf10d86662122877 providerName=docker
+time="2025-02-27T04:27:29Z" level=error msg="service \"core\" error: unable to find the IP address for the container \"/nginx-core\": the server is ignored" container=nginx-core-pet-micr-64c53b3ceda5ff57953523e73f976c074aa9149f2916ec24bf10d86662122877 providerName=docker
+time="2025-02-27T04:28:33Z" level=error msg="service \"core\" error: unable to find the IP address for the container \"/nginx-core\": the server is ignored" providerName=docker container=nginx-core-pet-micr-64c53b3ceda5ff57953523e73f976c074aa9149f2916ec24bf10d86662122877
+time="2025-02-27T04:29:37Z" level=error msg="service \"core\" error: unable to find the IP address for the container \"/nginx-core\": the server is ignored" container=nginx-core-pet-micr-64c53b3ceda5ff57953523e73f976c074aa9149f2916ec24bf10d86662122877 providerName=docker
+time="2025-02-27T04:30:41Z" level=error msg="service \"core\" error: unable to find the IP address for the container \"/nginx-core\": the server is ignored" providerName=docker container=nginx-core-pet-micr-64c53b3ceda5ff57953523e73f976c074aa9149f2916ec24bf10d86662122877
+time="2025-02-27T04:31:45Z" level=error msg="service \"core\" error: unable to find the IP address for the container \"/nginx-core\": the server is ignored" container=nginx-core-pet-micr-64c53b3ceda5ff57953523e73f976c074aa9149f2916ec24bf10d86662122877 providerName=docker
+time="2025-02-27T04:32:49Z" level=error msg="service \"core\" error: unable to find the IP address for the container \"/nginx-core\": the server is ignored" providerName=docker container=nginx-core-pet-micr-64c53b3ceda5ff57953523e73f976c074aa9149f2916ec24bf10d86662122877
+time="2025-02-27T04:32:53Z" level=warning msg="A new release has been found: 3.3.4. Please consider updating."
+time="2025-02-27T04:33:53Z" level=error msg="service \"core\" error: unable to find the IP address for the container \"/nginx-core\": the server is ignored" providerName=docker container=nginx-core-pet-micr-64c53b3ceda5ff57953523e73f976c074aa9149f2916ec24bf10d86662122877
+time="2025-02-27T04:34:57Z" level=error msg="service \"core\" error: unable to find the IP address for the container \"/nginx-core\": the server is ignored" providerName=docker container=nginx-core-pet-micr-64c53b3ceda5ff57953523e73f976c074aa9149f2916ec24bf10d86662122877
+time="2025-02-27T04:36:01Z" level=error msg="service \"core\" error: unable to find the IP address for the container \"/nginx-core\": the server is ignored" providerName=docker container=nginx-core-pet-micr-64c53b3ceda5ff57953523e73f976c074aa9149f2916ec24bf10d86662122877
+time="2025-02-27T04:37:05Z" level=error msg="service \"core\" error: unable to find the IP address for the container \"/nginx-core\": the server is ignored" container=nginx-core-pet-micr-64c53b3ceda5ff57953523e73f976c074aa9149f2916ec24bf10d86662122877 providerName=docker
+time="2025-02-27T04:38:09Z" level=error msg="service \"core\" error: unable to find the IP address for the container \"/nginx-core\": the server is ignored" providerName=docker container=nginx-core-pet-micr-64c53b3ceda5ff57953523e73f976c074aa9149f2916ec24bf10d86662122877
+time="2025-02-27T04:39:13Z" level=error msg="service \"core\" error: unable to find the IP address for the container \"/nginx-core\": the server is ignored" container=nginx-core-pet-micr-64c53b3ceda5ff57953523e73f976c074aa9149f2916ec24bf10d86662122877 providerName=docker
+time="2025-02-27T04:40:17Z" level=error msg="service \"core\" error: unable to find the IP address for the container \"/nginx-core\": the server is ignored" container=nginx-core-pet-micr-64c53b3ceda5ff57953523e73f976c074aa9149f2916ec24bf10d86662122877 providerName=docker
+time="2025-02-27T04:41:21Z" level=error msg="service \"core\" error: unable to find the IP address for the container \"/nginx-core\": the server is ignored" providerName=docker container=nginx-core-pet-micr-64c53b3ceda5ff57953523e73f976c074aa9149f2916ec24bf10d86662122877
+time="2025-02-27T04:42:25Z" level=error msg="service \"core\" error: unable to find the IP address for the container \"/nginx-core\": the server is ignored" providerName=docker container=nginx-core-pet-micr-64c53b3ceda5ff57953523e73f976c074aa9149f2916ec24bf10d86662122877
+time="2025-02-27T04:43:29Z" level=error msg="service \"core\" error: unable to find the IP address for the container \"/nginx-core\": the server is ignored" container=nginx-core-pet-micr-64c53b3ceda5ff57953523e73f976c074aa9149f2916ec24bf10d86662122877 providerName=docker
+time="2025-02-27T04:44:33Z" level=error msg="service \"core\" error: unable to find the IP address for the container \"/nginx-core\": the server is ignored" providerName=docker container=nginx-core-pet-micr-64c53b3ceda5ff57953523e73f976c074aa9149f2916ec24bf10d86662122877
+time="2025-02-27T04:45:37Z" level=error msg="service \"core\" error: unable to find the IP address for the container \"/nginx-core\": the server is ignored" providerName=docker container=nginx-core-pet-micr-64c53b3ceda5ff57953523e73f976c074aa9149f2916ec24bf10d86662122877
+time="2025-02-27T04:46:41Z" level=error msg="service \"core\" error: unable to find the IP address for the container \"/nginx-core\": the server is ignored" providerName=docker container=nginx-core-pet-micr-64c53b3ceda5ff57953523e73f976c074aa9149f2916ec24bf10d86662122877
+time="2025-02-27T04:47:45Z" level=error msg="service \"core\" error: unable to find the IP address for the container \"/nginx-core\": the server is ignored" providerName=docker container=nginx-core-pet-micr-64c53b3ceda5ff57953523e73f976c074aa9149f2916ec24bf10d86662122877
+time="2025-02-27T04:48:49Z" level=error msg="service \"core\" error: unable to find the IP address for the container \"/nginx-core\": the server is ignored" container=nginx-core-pet-micr-64c53b3ceda5ff57953523e73f976c074aa9149f2916ec24bf10d86662122877 providerName=docker
+time="2025-02-27T04:49:53Z" level=error msg="service \"core\" error: unable to find the IP address for the container \"/nginx-core\": the server is ignored" providerName=docker container=nginx-core-pet-micr-64c53b3ceda5ff57953523e73f976c074aa9149f2916ec24bf10d86662122877
+time="2025-02-27T04:50:57Z" level=error msg="service \"core\" error: unable to find the IP address for the container \"/nginx-core\": the server is ignored" providerName=docker container=nginx-core-pet-micr-64c53b3ceda5ff57953523e73f976c074aa9149f2916ec24bf10d86662122877
+time="2025-02-27T04:52:01Z" level=error msg="service \"core\" error: unable to find the IP address for the container \"/nginx-core\": the server is ignored" providerName=docker container=nginx-core-pet-micr-64c53b3ceda5ff57953523e73f976c074aa9149f2916ec24bf10d86662122877
+time="2025-02-27T04:53:05Z" level=error msg="service \"core\" error: unable to find the IP address for the container \"/nginx-core\": the server is ignored" providerName=docker container=nginx-core-pet-micr-64c53b3ceda5ff57953523e73f976c074aa9149f2916ec24bf10d86662122877
+time="2025-02-27T04:54:09Z" level=error msg="service \"core\" error: unable to find the IP address for the container \"/nginx-core\": the server is ignored" providerName=docker container=nginx-core-pet-micr-64c53b3ceda5ff57953523e73f976c074aa9149f2916ec24bf10d86662122877
+time="2025-02-27T04:55:14Z" level=error msg="service \"core\" error: unable to find the IP address for the container \"/nginx-core\": the server is ignored" providerName=docker container=nginx-core-pet-micr-64c53b3ceda5ff57953523e73f976c074aa9149f2916ec24bf10d86662122877
+time="2025-02-27T04:55:18Z" level=info msg="I have to go..."
+time="2025-02-27T04:55:18Z" level=info msg="Stopping server gracefully"
+time="2025-02-27T04:55:18Z" level=error msg="accept tcp [::]:80: use of closed network connection" entryPointName=web
+time="2025-02-27T04:55:18Z" level=error msg="accept tcp [::]:8080: use of closed network connection" entryPointName=traefik
+time="2025-02-27T04:55:18Z" level=error msg="close tcp [::]:80: use of closed network connection" entryPointName=web
+time="2025-02-27T04:55:18Z" level=error msg="close tcp [::]:8080: use of closed network connection" entryPointName=traefik
+time="2025-02-27T04:55:18Z" level=info msg="Server stopped"
+time="2025-02-27T04:55:18Z" level=info msg="Shutting down"
+time="2025-02-27T06:30:57Z" level=info msg="Traefik version 2.10.7 built on 2023-12-06T15:54:59Z"
+time="2025-02-27T06:30:57Z" level=info msg="\nStats collection is disabled.\nHelp us improve Traefik by turning this feature on :)\nMore details on: https://doc.traefik.io/traefik/contributing/data-collection/\n"
+time="2025-02-27T06:30:57Z" level=info msg="Starting provider aggregator aggregator.ProviderAggregator"
+time="2025-02-27T06:30:57Z" level=info msg="Starting provider *traefik.Provider"
+time="2025-02-27T06:30:57Z" level=info msg="Starting provider *docker.Provider"
+time="2025-02-27T06:30:57Z" level=info msg="Starting provider *acme.ChallengeTLSALPN"
+time="2025-02-27T06:40:59Z" level=warning msg="A new release has been found: 3.3.4. Please consider updating."
+time="2025-02-27T08:51:05Z" level=warning msg="Failed to inspect container 9545208a58d314f908d495e901efff49f06a87220ddf0693cd17d8e9983d19b6, error: Error: No such container: 9545208a58d314f908d495e901efff49f06a87220ddf0693cd17d8e9983d19b6" providerName=docker
+time="2025-02-27T08:54:52Z" level=warning msg="Failed to inspect container 09f85a1beecad81f280f0ea75502348d99978e7bf761c89e9f47b4395f122205, error: Error: No such container: 09f85a1beecad81f280f0ea75502348d99978e7bf761c89e9f47b4395f122205" providerName=docker
+time="2025-02-27T09:04:28Z" level=warning msg="Failed to inspect container af6ed6259981603149964387481031af58f1dc4686ce95191a4cfba71ec3ed62, error: Error: No such container: af6ed6259981603149964387481031af58f1dc4686ce95191a4cfba71ec3ed62" providerName=docker
+time="2025-02-27T09:35:28Z" level=warning msg="Failed to inspect container b6b1e098324f5bf14da7e5a28f532c6cf9a90362afdcc69fee0d8d0f70752bc2, error: Error: No such container: b6b1e098324f5bf14da7e5a28f532c6cf9a90362afdcc69fee0d8d0f70752bc2" providerName=docker
+time="2025-02-27T09:40:26Z" level=warning msg="Failed to inspect container 756cbd51ea3583b12d1bd16a432ec6cbdbf0bbd68abc3086fba0a91fdebf301f, error: Error: No such container: 756cbd51ea3583b12d1bd16a432ec6cbdbf0bbd68abc3086fba0a91fdebf301f" providerName=docker
+time="2025-02-27T09:41:53Z" level=warning msg="Failed to inspect container c5beb0701771a53765e21c76abe49ebda92d32ee12ed2367daec2526aea17b16, error: Error: No such container: c5beb0701771a53765e21c76abe49ebda92d32ee12ed2367daec2526aea17b16" providerName=docker
+time="2025-02-27T09:47:11Z" level=warning msg="Failed to inspect container 217d9dc920306ea0de1392ac6cb5d0e0b6520e1323e8718a11504cf10d3acb16, error: Error: No such container: 217d9dc920306ea0de1392ac6cb5d0e0b6520e1323e8718a11504cf10d3acb16" providerName=docker
+time="2025-02-27T10:03:54Z" level=warning msg="Failed to inspect container c6fb14bb1acf2c3ee15e8504e4c119d8d195a8780ab6e652c7d702ec631acf5c, error: Error: No such container: c6fb14bb1acf2c3ee15e8504e4c119d8d195a8780ab6e652c7d702ec631acf5c" providerName=docker
+time="2025-02-27T10:16:47Z" level=info msg="I have to go..."
+time="2025-02-27T10:16:47Z" level=info msg="Stopping server gracefully"
+time="2025-02-27T10:16:47Z" level=error msg="accept tcp [::]:8080: use of closed network connection" entryPointName=traefik
+time="2025-02-27T10:16:47Z" level=error msg="accept tcp [::]:80: use of closed network connection" entryPointName=web
+time="2025-02-27T10:16:47Z" level=error msg="close tcp [::]:8080: use of closed network connection" entryPointName=traefik
+time="2025-02-27T10:16:47Z" level=error msg="close tcp [::]:80: use of closed network connection" entryPointName=web
+time="2025-02-27T10:16:47Z" level=info msg="Server stopped"
+time="2025-02-27T10:16:47Z" level=info msg="Shutting down"
+time="2025-02-28T04:38:27Z" level=info msg="Traefik version 2.10.7 built on 2023-12-06T15:54:59Z"
+time="2025-02-28T04:38:27Z" level=info msg="\nStats collection is disabled.\nHelp us improve Traefik by turning this feature on :)\nMore details on: https://doc.traefik.io/traefik/contributing/data-collection/\n"
+time="2025-02-28T04:38:27Z" level=info msg="Starting provider aggregator aggregator.ProviderAggregator"
+time="2025-02-28T04:38:27Z" level=info msg="Starting provider *traefik.Provider"
+time="2025-02-28T04:38:27Z" level=info msg="Starting provider *docker.Provider"
+time="2025-02-28T04:38:27Z" level=info msg="Starting provider *acme.ChallengeTLSALPN"
+time="2025-02-28T04:38:44Z" level=error msg="service \"core\" error: unable to find the IP address for the container \"/nginx-core\": the server is ignored" providerName=docker container=nginx-core-pet-micr-64c53b3ceda5ff57953523e73f976c074aa9149f2916ec24bf10d86662122877
+time="2025-02-28T04:38:56Z" level=error msg="service \"core\" error: unable to find the IP address for the container \"/nginx-core\": the server is ignored" container=nginx-core-pet-micr-64c53b3ceda5ff57953523e73f976c074aa9149f2916ec24bf10d86662122877 providerName=docker
+time="2025-02-28T04:39:02Z" level=error msg="service \"core\" error: unable to find the IP address for the container \"/nginx-core\": the server is ignored" container=nginx-core-pet-micr-64c53b3ceda5ff57953523e73f976c074aa9149f2916ec24bf10d86662122877 providerName=docker
+time="2025-02-28T04:39:06Z" level=error msg="service \"core\" error: unable to find the IP address for the container \"/nginx-core\": the server is ignored" container=nginx-core-pet-micr-64c53b3ceda5ff57953523e73f976c074aa9149f2916ec24bf10d86662122877 providerName=docker
+time="2025-02-28T04:39:15Z" level=info msg="I have to go..."
+time="2025-02-28T04:39:15Z" level=info msg="Stopping server gracefully"
+time="2025-02-28T04:39:15Z" level=error msg="accept tcp [::]:8080: use of closed network connection" entryPointName=traefik
+time="2025-02-28T04:39:15Z" level=error msg="close tcp [::]:8080: use of closed network connection" entryPointName=traefik
+time="2025-02-28T04:39:15Z" level=error msg="accept tcp [::]:80: use of closed network connection" entryPointName=web
+time="2025-02-28T04:39:15Z" level=error msg="close tcp [::]:80: use of closed network connection" entryPointName=web
+time="2025-02-28T04:39:15Z" level=info msg="Server stopped"
+time="2025-02-28T04:39:15Z" level=info msg="Shutting down"
+time="2025-02-28T04:39:15Z" level=error msg="Failed to list containers for docker, error context canceled" providerName=docker
+time="2025-02-28T04:39:15Z" level=error msg="Cannot connect to docker server context canceled" providerName=docker
